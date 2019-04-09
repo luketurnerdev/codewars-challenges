@@ -17,15 +17,28 @@
         #then we can .sort
 
 def ordered_count(str)
-    p str.split("").map
-    # arr = []
-    # i = 0 
-    # while i < str.length
-    #     #populate list
-    #     arr.push([str[i],str.count(str[i])])
-    #     i+=1
+    arr = []
+    i = 0 
+    while i < str.length
+        #populate list
+        arr.push([str[i],str.count(str[i])])
+        i+=1
+    end
+
+    # if arr.uniq! == nil
+    #     p 'no repeated elements'
     # end
-    # arr.uniq!.sort
+    # if arr.uniq != nil
+    #     'not nill'
+    # else
+    #     return nil
+    # end
+    arr.uniq!
+    arr
 end
 
-p ordered_count('abracadabra')
+
+p ordered_count("abracadabra")
+p ordered_count("codewars")
+
+# [['a', 5], ['b', 2], ['r', 2], ['c', 1], ['d', 1]]
