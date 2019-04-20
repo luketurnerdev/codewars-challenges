@@ -24,15 +24,6 @@ def ordered_count(str)
         arr.push([str[i],str.count(str[i])])
         i+=1
     end
-
-    # if arr.uniq! == nil
-    #     p 'no repeated elements'
-    # end
-    # if arr.uniq != nil
-    #     'not nill'
-    # else
-    #     return nil
-    # end
     arr.uniq!
     arr
 end
